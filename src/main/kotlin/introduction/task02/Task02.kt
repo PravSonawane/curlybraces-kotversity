@@ -13,3 +13,8 @@ package introduction.task02
         b. + operator
         c. String interpolation
 */
+
+fun main() {
+    val message = "Hello"
+    println("$message, World!")
+}
