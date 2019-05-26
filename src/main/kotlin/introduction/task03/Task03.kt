@@ -5,7 +5,7 @@ package introduction.task03
         1. Define a function printString() that prints "Kotlin"
         2. Change the function to take a string parameter and make it print that
         3. Define a new function add() that takes two params and returns their sum
-        3. Write a unit test for these functions
+        4. Write a unit test for add()
  */
 
 /*
@@ -20,4 +20,14 @@ package introduction.task03
 */
 
 fun main() {
+
+    val messageString = "Kotlin"
+    printString(messageString)
+    println(add(3, 7)) // primitives, this, return types of lambdas
 }
+
+fun printString(message: String) {
+    println(message)
+}
+
+fun add(a: Int, b: Int) = a + b
