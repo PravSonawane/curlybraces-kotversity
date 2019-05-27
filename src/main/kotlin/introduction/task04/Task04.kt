@@ -20,4 +20,25 @@ package introduction.task04
 */
 
 fun main() {
+    println(wrap("Kotlin", suffix = ')'))
+    println(wrap("Kotlin", "{{", "}}"))
+    println(sum(10, 20, 10))
+    println(sum(2, 3))
+}
+
+fun wrap(str: String, prefix: Char = '[', suffix: Char = ']'): String {
+    println("hello")
+    return prefix + str + suffix
+}
+
+fun wrap(str: String, prefix: String = "[", suffix: String = "]"): String {
+    return prefix + str + suffix
+}
+
+fun sum(n1: Int, n2: Int, n3: Int): Int {
+    return n1 + n2 + n3
+}
+
+fun sum(vararg nums: Int): Int {
+    return nums.sum()
 }
